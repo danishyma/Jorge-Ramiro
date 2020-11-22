@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Entre em contato">
+  <title>Jorge Ramiro | Contact</title>
+	<link rel="shortcut icon" type="image/svg+xml" href="img/camera-solid.svg"> 
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  	<link href="css/contato.css" rel="stylesheet">
+</head>
+<body>  
+  <div class="container">
+    <header>
+      <nav role="navigation" id="nav" class="nav nav-scrolled">
+        <a class="logo" role="logo">Jorge Ramiro</a>
+        <ul class="nav-links">
+          <li class="nav__item"><a href="index.html">Home</a></li>
+          <li class="nav__item"><a href="sobre.html">Sobre</a></li>
+          <li class="nav__item"><a href="index.html#galerias">Galerias</a></li>
+          <li class="nav__item"><a href="https://dollmaniacontato.wixsite.com/jorgeramiro-photos/blog" target="_blank">Blog</a></li>
+          <li class="nav__item"><a class="active" href="#top" onclick="closeMenu()">Contato</a></li>
+          <li class="icon">
+            <div id="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></div>
+          </li> 
+        </ul>
+      </nav>
+    </header>
+
+    <section class="form-content">
+
+    <div class="social">
+      <a href="https://www.instagram.com/jorgeramiroartepop/" class="btn instagram" target="_blank">
+        <i class="fab fa-instagram"></i>
+        <div class="title">Jorge Ramiro</div>
+      </a>
+      <a href="https://www.instagram.com/clickingdolls/" class="btn instagram" target="_blank">
+        <i class="fab fa-instagram"><span>·</span></i>
+        <div class="title">Clicking Dolls</div>
+      </a>
+      <a href="https://www.facebook.com/jorgeramiro.05/" target="_blank" id="tribute-link" class="btn Facebook">
+        <i class="fab fa-facebook"></i>
+        <div class="title">Facebook</div>
+      </a>
+      <a href="https://dollmaniacontato.wixsite.com/jorgeramiro-photos/blog" target="_blank" class="btn blog">
+        <i class="fas fa-blog"></i>
+        <div class="title">Blog</div>
+      </a>
+    </div>
+
+    <div class="contact">
+      <h3>Entre em contato!</h3>
+      <p>Para informações sobre oficinas, cotações de obras e parcerias envie o formulário abaixo: </p>
+      <form class="form" method="POST" action="./email.php" target="_blank" autocomplete="on">
+        
+        <div class="personal">
+          <label for="name">Nome:</label>
+          <input id="name" class="field" name="name" placeholder="Nome" minlength="3" required>
+        
+          <label for="e-mail">E-mail:</label>
+          <input id="e-mail" class="field" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email address" required>
+        </div>
+        <div class="message">
+          <label for="message">Mensagem:</label>
+          <textarea id="message" class="field" name="message" placeholder="Deixe sua mensagem" rows="10" required></textarea>
+        </div>
+        <input class="field" type="submit" value="Enviar">
+      </form>
+    </div>
+    
+    </section>
+    
+  </div>
+
+  <script src="js/navbar.js"></script>
+</body>
+</html>
